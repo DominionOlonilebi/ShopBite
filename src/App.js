@@ -7,6 +7,7 @@ import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import Card from "./components/Card";
 import "./index.css";
+import { Col, Container, Row } from "react-bootstrap";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -71,10 +72,21 @@ function App() {
 
   return (
     <>
-      <Sidebar handleChange={handleChange} />
-      <Navigation query={query} handleInputChange={handleInputChange} />
-      <Recommended handleClick={handleClick} />
-      <Products result={result} />
+      <Container>
+        <Row>
+          <Col md={3} sm={3}>
+            <Sidebar handleChange={handleChange} />
+          </Col>
+
+          <Col md={9} sm={9}>
+            <Row className="d-flex flex-row justify-content-center">
+              <Navigation query={query} handleInputChange={handleInputChange} />
+              <Recommended handleClick={handleClick} />
+              <Products result={result} />
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

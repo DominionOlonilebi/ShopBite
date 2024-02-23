@@ -1,30 +1,39 @@
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20rem;
+    justify-content: center;
     margin-top: 2rem;
-    z-index: -2;
   }
   
   .card {
-    margin: 20px;
+    
     border: 2px solid #ededed;
     padding: 20px;
     cursor: pointer;
+    margin-bottom: 20px;
+    max-height: 21rem;
+    min-height: 21rem;
+    min-width: 22rem;
+    max-width: 22rem;
+
+  }
+  .card  .product-img{
+    margin-bottom: 10px;
+    height: 30%;
+    width: 5px;
   }
   
-  .card-img {
-    width: 13rem;
-    margin-bottom: 1rem;
-  }
   
   .card-title {
     margin-bottom: 1rem;
+    font-size: 16px;
+    
   }
   
   .card-reviews {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     display: flex;
+    
   }
   
   .ratings-star {
@@ -32,7 +41,7 @@
   }
   
   .total-reviews {
-    font-size: 0.9rem;
+    font-size: 14px;
     margin-left: 10px;
   }
   
@@ -40,6 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 14px;
   }
   
   .bag-icon {

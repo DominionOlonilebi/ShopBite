@@ -1,9 +1,7 @@
 .recommended-flex{
-    display: flex;
-    margin-left: 20rem;
+    display: flex;    
 }
-.recommended-title{
-    margin-left: 20rem;
+.recommended-title{  
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 20px;
@@ -11,6 +9,7 @@
 .btns{
     padding: 10px 20px;
     margin-right: 6px;
+    margin-bottom: 40px;
     background: transparent;
     border: none;
     border: 0.6px solid #ccc;

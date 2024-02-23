@@ -1,9 +1,10 @@
+import { Card, Col, Container, Row } from "react-bootstrap";
 import "./Products.css";
 
 const Products = ({ result }) => {
   return (
     <>
-      <section className="card-container">{result}</section>
+      <div className="card-container">{result}</div>
     </>
   );
 };

@@ -25,3 +25,8 @@ nav {
     margin-left: 2rem;
     color: rgb(122, 122, 122);
   }
+  @media (max-width: 758px) {
+    .nav-icons{
+      display: none;
+    }
+  }

@@ -17,3 +17,16 @@
     color: #323232;
     cursor: pointer;
   }
+  @media (max-width:768px) {
+    .btns{
+        padding: 4px 8px;
+    margin-right: 3px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
+    border: 0.6px solid #ccc;
+    border-radius: 5px;
+    color: #323232;
+    cursor: pointer;
+    }
+  }
